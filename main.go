@@ -11,8 +11,7 @@ import (
 func CheckMemAndTime(s string) {
 	fmt.Println(s, testmemory.ReadMemInfo().Available/1024, "MB")
 	t := time.Now()
-	formatted := fmt.Sprintf("%02d:%02d:%02d",
-        t.Hour(), t.Minute(), t.Second())
+	formatted := fmt.Sprintf("%02d:%02d:%02d", t.Hour(), t.Minute(), t.Second())
 	fmt.Println(formatted)
 }
 
