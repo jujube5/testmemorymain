@@ -43,6 +43,8 @@ func main() {
 	OutputRes("rget", "Redis Get 5 000 000 records")
 	OutputRes("rdelete", "Redis Delete 5 000 000 records")
 	ballast := make([]byte, 104857600)
+	len_ballast := len(ballast)
+	fmt.Println("Ballast: ", len_ballast)
 	OutputRes("nset", "Native Set 5 000 000 records")
 	OutputRes("nget", "Native Get 5 000 000 records")
 	OutputRes("ndelete", "Native Delete 5 000 000 records")
