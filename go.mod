@@ -1,4 +1,4 @@
-module main
+module github.com/jujube5/testmemorymain
 
 go 1.20
 
